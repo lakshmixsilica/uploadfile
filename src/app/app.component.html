@@ -1,0 +1,16 @@
+
+
+<h1>
+  {{title}}
+</h1>
+<br/>
+<input id="cin" name="cin" type="file" (change)="fileChangeEvent($event)" placeholder="Upload a file..." multiple/>
+
+<button type="button" class="btn btn-success btn-s" (click)="upload($event)">
+    <i class="glyphicon glyphicon-open-file"></i>&nbsp;Upload
+</button>
+
+<a routerLink="files">files</a>
+
+ <router-outlet></router-outlet>
+ 
